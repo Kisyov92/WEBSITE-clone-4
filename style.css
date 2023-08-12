@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.heading {
+  font-size: 4.48rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  color: #858585;
+  line-height: 1.5;
+}
+
+.label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.blue-color {
+  color: #097eff;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10rem;
+  border: 1px solid #097eff;
+  transition: all 0.3s;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  color: #097eff;
+  background-color: #fff;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  color: #fff;
+  background-color: #097eff;
+}
+.btn-fill:link,
+.btn-fill:visited {
+  color: #fff;
+  background-color: #097eff;
+}
+.btn-fill:hover,
+.btn-fill:active {
+  color: #097eff;
+  background-color: #fff;
+}
+
+/**************************/
+/* NAVIGATION BAR */
+/**************************/
+
+.nav-bar {
+  position: sticky;
+  top: 3rem;
+}
+
+.nav-bar--list {
+  list-style: none;
+  width: 120rem;
+  height: 7.5rem;
+  margin: 3rem auto 0;
+  padding: 1.3rem 2.6rem;
+
+  border: 1px solid #f8f8f8;
+  box-shadow: 4px 0 10px 0 rgba(177, 170, 170, 0.15);
+  border-radius: 5rem;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-bar--list li:first-child {
+  margin-right: auto;
+}
+.nav-bar--list li:last-child {
+  margin-left: auto;
+}
+
+.nav-bar--logo {
+  width: 11rem;
+}
+
+.nav-bar--link:link,
+.nav-bar--link:visited {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.nav-bar--link:hover,
+.nav-bar--link:active {
+  opacity: 0.8;
+}
+
+/**************************/
+/* SECTION HERO */
+/**************************/
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 12.8rem 0;
+}
+
+.hero-img {
+  width: 77rem;
+}
+
+.hero-heading {
+  margin: 2rem 0 4rem;
+}
+
+.hero-paragraph {
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+/**************************/
+/* SECTION PARTNERS */
+/**************************/
+
+.partners {
+  padding: 6rem 0;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners-heading {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  letter-spacing: 2px;
+  color: #858585;
+}
+
+/**************************/
+/* SECTION FEATURES */
+/**************************/
+
+.features {
+  padding: 15rem 0;
+  gap: 8rem;
+}
+
+.features-img {
+  width: 100%;
+  border-radius: 30px;
+}
+.features-img:hover {
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.35);
+}
+
+.feature {
+  align-self: center;
+}
+
+.feature-heading {
+  margin-bottom: 2.4rem;
+}
+
+.feature-paragraph {
+  margin-bottom: 2rem;
+}
+
+.feature-link:link,
+.feature-link:visited {
+  text-decoration: none;
+  color: #097eff;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+
+  display: flex;
+  align-items: center;
+}
+
+.link-arrow {
+  padding-left: 0.3rem;
+  height: 1.4rem;
+}
+
+/**************************/
+/* SECTION STATS */
+/**************************/
+
+.section-stats {
+  padding: 7rem 0;
+  margin-bottom: 14rem;
+}
+
+.stats {
+  text-align: center;
+}
+
+.stats-heading {
+  margin-bottom: 1rem;
+}
+
+.stats-paragraph {
+  margin-bottom: 3rem;
+}
+
+.stats-btn-fill:link,
+.stats-btn-fill:visited,
+.stats-btn-outline:link,
+.stats-btn-outline:visited {
+  font-size: 1.4rem;
+}
+
+.stats-btn-fill:hover,
+.stats-btn-fill:active {
+  color: white;
+  background-color: #097eff;
+  opacity: 0.9;
+}
+
+.stats-btn-outline:link,
+.stats-btn-outline:visited {
+  margin-left: 1.5rem;
+}
+.stats-btn-outline:hover,
+.stats-btn-outline:active {
+  color: #097eff;
+  background-color: snow;
+  opacity: 0.9;
+}
+
+.statistics {
+  display: flex;
+  text-align: center;
+  gap: 5rem;
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.stats-heding {
+  margin: 7rem 0;
+}
+
+/**************************/
+/* SECTION STATS */
+/**************************/
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonial-heading {
+  margin-bottom: 3rem;
+}
+
+.testimonial-paragraph {
+  margin-bottom: 5rem;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial > * {
+  width: 50%;
+}
+
+.testimonial-quote {
+  text-align: left;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+
+  color: #1b1a1d;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.testimonial-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 5rem 0 2.5rem;
+}
+
+.testimonial-job {
+  font-size: 1.4rem;
+  opacity: 0.6;
+}
