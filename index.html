@@ -12,6 +12,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <nav class="nav-bar">
@@ -141,7 +144,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 link-arrow"
+                class="w-6 h-6 pricing-icon link-arrow"
               >
                 <path
                   stroke-linecap="round"
@@ -178,7 +181,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 link-arrow"
+                class="w-6 h-6 pricing-icon link-arrow"
               >
                 <path
                   stroke-linecap="round"
@@ -260,18 +263,291 @@
           </div>
           <div class="faq-questions">
             <div class="qa-container">
-              <div class="question">
-                <p class="question-text">What is a SaaS website?</p>
+              <div class="qa">
+                <div class="question">
+                  <p class="question-text">What is a SaaS website?</p>
+                  <img
+                    class="open-close-icon"
+                    src="images/plus-icon.svg"
+                    alt="open / close sign"
+                  />
+                </div>
+                <p class="answer">
+                  A SaaS (Software as a Service) website is a type of web-based
+                  application that is hosted on a remote server and accessed
+                  through a web browser. SaaS websites offer users the ability
+                  to use software or access services over the internet, rather
+                  than installing it on their own computers.
+                </p>
+              </div>
+              <div class="qa">
+                <div class="question">
+                  <p class="question-text">
+                    What are some common features of a SaaS website?
+                  </p>
+                  <img
+                    class="open-close-icon"
+                    src="images/plus-icon.svg"
+                    alt="open / close sign"
+                  />
+                </div>
+                <p class="answer">
+                  Common features of a SaaS website include user accounts and
+                  login, data storage, billing and subscription management, and
+                  customer support. Some SaaS websites also offer additional
+                  features such as integrations with other apps or platforms,
+                  customizable user interfaces, and data analytics tools.
+                </p>
+              </div>
+              <div class="qa">
+                <div class="question">
+                  <p class="question-text">
+                    How is a SaaS website different from a traditional software
+                    application?
+                  </p>
+                  <img
+                    class="open-close-icon"
+                    src="images/plus-icon.svg"
+                    alt="open / close sign"
+                  />
+                </div>
+                <p class="answer">
+                  Traditionally, software applications have been installed on
+                  individual computers or servers, and users have had to
+                  purchase a license in order to use them. In contrast, SaaS
+                  websites are accessed through a web browser and do not require
+                  users to install any software. Instead, users pay for a
+                  subscription to access the software or services offered by the
+                  SaaS website.
+                </p>
+              </div>
+              <div class="qa">
+                <div class="question">
+                  <p class="question-text">
+                    What are some benefits of using a SaaS website?
+                  </p>
+                  <img
+                    class="open-close-icon"
+                    src="images/plus-icon.svg"
+                    alt="open / close sign"
+                  />
+                </div>
+                <p class="answer">
+                  There are several benefits to using a SaaS website,
+                  including:Convenience: SaaS websites can be accessed from any
+                  device with an internet connection, making it easy for users
+                  to access the software or services they need from
+                  anywhere.Cost-effectiveness: SaaS websites often offer
+                  flexible pricing plans and subscription options, which can be
+                  more cost-effective than purchasing a traditional software
+                  license.Scalability: SaaS websites are designed to scale as
+                  the needs of their users grow, making it easy to add or remove
+                  users and adjust subscription plans as needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pricing">
+        <div class="container-pricing">
+          <div class="pricing-option">
+            <h3 class="pricing-option-name">Startup</h3>
+            <p class="price-label">
+              <span class="price-text">Starting at</span>
+              <span class="price-tag"
+                >$299<span class="price-period">/mo</span></span
+              ><span class="price-text">Unleash the power of automation.</span>
+            </p>
+            <div class="pricing-option-benefits">
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon"></i>
+                <p>Multi-step Zaps</p>
+              </div>
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon"></i>
+                <p>3 Premium Apps</p>
+              </div>
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon"></i>
+                <p>2 Users team</p>
+              </div>
+            </div>
+            <a class="btn btn-outline btn-plan" href="#">Choose plan</a>
+          </div>
+          <div class="pricing-option">
+            <h3 class="pricing-option-name">Professional</h3>
+            <p class="price-label">
+              <span class="price-text">Starting at</span>
+              <span class="price-tag"
+                >$699<span class="price-period">/mo</span></span
+              ><span class="price-text"
+                >Advanced tools to take your work to the next level.</span
+              >
+            </p>
+            <div class="pricing-option-benefits">
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon"></i>
+                <p>Multi-step Zaps</p>
+              </div>
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon"></i>
+                <p>Unlimited Premium Apps</p>
+              </div>
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon"></i>
+                <p>50 Users Team</p>
+              </div>
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon"></i>
+                <p>Shared Workspace</p>
+              </div>
+            </div>
+            <a class="btn btn-outline btn-plan" href="#">Choose plan</a>
+          </div>
+          <div class="pricing-option pricing-best">
+            <h3 class="pricing-option-name">Company</h3>
+            <p class="price-label">
+              <span class="price-text best-pricing-text">Starting at</span>
+              <span class="price-tag"
+                >$999<span class="price-period">/mo</span></span
+              ><span class="price-text best-pricing-text"
+                >Automation plus enterprise-grade features.
+              </span>
+            </p>
+            <div class="pricing-option-benefits">
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon price-icon-best"></i>
+                <p>Multi-step Zaps</p>
+              </div>
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon price-icon-best"></i>
+                <p>Unlimited Premium Apps</p>
+              </div>
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon price-icon-best"></i>
+                <p>Unlimited Users Team</p>
+              </div>
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon price-icon-best"></i>
+                <p>Advanced Admin</p>
+              </div>
+              <div class="benefit">
+                <i class="ph ph-check-circle price-icon price-icon-best"></i>
+                <p>Custom Data Retention</p>
+              </div>
+            </div>
+            <a class="btn btn-outline btn-plan btn-best-plan" href="#"
+              >Choose plan</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-blog">
+        <div class="container">
+          <h2 class="heading heading-blog">Blog</h2>
+          <div class="blogs">
+            <div class="blog">
+              <a class="blog-link" href="#">
                 <img
-                  class="open-close-icon"
-                  src="images/plus-icon.svg"
-                  alt="open / close sign"
+                  class="blog-img"
+                  src="images/blog-img-1.svg"
+                  alt="Abstract image"
                 />
+                <h3 class="blog-heading">
+                  Predictions and Trends for the Next 5 Years
+                </h3>
+              </a>
+              <div class="blog-author">
+                <img
+                  class="author-img"
+                  src="images/blog-author-1.svg"
+                  alt="A picture of Chandler Bing"
+                />
+                <div class="article-info">
+                  <p class="author-name">Chandler Bing</p>
+                  <p class="article-date">
+                    October 11, 2022 <span class="devider">•</span> 5 min read
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="blog">
+              <a class="blog-link" href="#">
+                <img
+                  class="blog-img"
+                  src="images/blog-img-2.svg"
+                  alt="Abstract image"
+                />
+                <h3 class="blog-heading">
+                  5 Ways Your SaaS Business Can Benefit from Implementing AI
+                </h3>
+              </a>
+              <div class="blog-author">
+                <img
+                  class="author-img"
+                  src="images/blog-author-2.svg"
+                  alt="A picture of Dr Sheldon Cooper"
+                />
+                <div class="article-info">
+                  <p class="author-name">Sheldon Cooper</p>
+                  <p class="article-date">
+                    December 12, 2022 <span class="devider">•</span> 5 min read
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="contact-form">
+          <h2 class="heading-contact">Contact</h2>
+          <form action="">
+            <input
+              class="email-input"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button class="btn-contact" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Feautures</a></li>
+            <li><a class="footer-link" href="#">Faqs</a></li>
+            <li><a class="footer-link" href="#">Pricing</a></li>
+            <li><a class="footer-link" href="#">Blogs</a></li>
+          </ul>
+          <ul class="social-links">
+            <li>
+              <a class="social-link" href="#"
+                ><i class="ph ph-facebook-logo social-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><i class="ph ph-twitter-logo social-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><i class="ph ph-instagram-logo social-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><i class="ph ph-linkedin-logo social-icon"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
