@@ -31,3 +31,24 @@ featureLink.forEach((link) =>
     link.querySelector(".link-arrow").classList.remove("dist");
   })
 );
+
+// smooth scroll
+
+const navMain = document.querySelector(".nav-bar");
+const footerLinks = document.querySelector(".footer-links");
+
+function smoothScrollNav(element, linkClass) {
+  element.addEventListener("click", function (e) {
+    console.log(e.target);
+    if (!e.target.classList.contains(linkClass)) return;
+    e.preventDefault();
+    const clickedLinkEl = e.target.closest(`.${linkClass}`);
+    const sectionID = clickedLinkEl.getAttribute("href");
+    const sectionEl = document.querySelector(sectionID);
+    sectionEl.style.scrollMargin = "12rem";
+    sectionEl.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+smoothScrollNav(navMain, "nav-bar--link");
+smoothScrollNav(footerLinks, "footer-link");

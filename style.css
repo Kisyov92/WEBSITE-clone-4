@@ -167,6 +167,7 @@ body {
 
 .partners {
   padding: 6rem 0;
+  margin-bottom: 15rem;
 }
 
 .partners-logos {
@@ -188,7 +189,6 @@ body {
 /**************************/
 
 .features {
-  padding: 15rem 0;
   gap: 8rem;
 }
 
